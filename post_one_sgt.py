@@ -78,7 +78,7 @@ reply = api_get(url)
 uuid = reply.json()["SearchResult"]["resources"][0]["id"]
 
 # Print Confirmation including the UUID of the new SGT
-print(f'\nNew SGT Created: "{sgt_name}", with UUID: "{uuid}"')
+print(f'\nSGT Created: "{sgt_name}", with UUID: "{uuid}"')
 
 
 #################################################################################################
@@ -118,5 +118,4 @@ body = json.dumps(sgt_vn_pool_json)
 api_post(url, body)
 
 # Print Confirmation
-print('New SGT to VN to IP Pool relationship created:')
-print(f'SGT:{sgt_name} --> VN:{vn} --> IP Pool:{ip_pool}')
+print(f'Relationship created: "SGT:{sgt_name} --> VN:{vn} --> IP Pool:{ip_pool}"')
