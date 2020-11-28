@@ -13,8 +13,8 @@ PORT = ENV_VARS.PORT
 USERNAME = ENV_VARS.USERNAME
 PASSWORD = ENV_VARS.PASSWORD
 
-authentication = HTTPBasicAuth(username, password)
-headers = {'Content-Type': "application/json",'Accept': "application/json"}
+authentication = HTTPBasicAuth(USERNAME, PASSWORD)
+headers = {'Content-Type': "application/json", 'Accept': "application/json"}
 
 def call_api(path):
     response = requests.get(
