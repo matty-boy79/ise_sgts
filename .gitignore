@@ -2,3 +2,5 @@ ENV_VARS.py
 sgtlog.txt
 data.txt
 myfile.txt
+venv/
+.idea/
